@@ -65,6 +65,7 @@ export default function ChatPage() {
           try {
             const d = JSON.parse(line.slice(6));
             if (d.type === 'delta') { ai += d.text; setStreamText(ai); }
+            if (d.type === 'error') { ai = `Error: ${d.message}`; setStreamText(ai); }
           } catch { }
         }
       }
