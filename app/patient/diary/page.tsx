@@ -5,7 +5,7 @@ import { hasAccess } from '@/lib/plans';
 
 // Mock — René reemplaza con datos reales
 const USER_PLAN = 'free'; // 'free' | 'plus' | 'family'
-const USER_GENDER = 'femenino'; // del perfil del paciente
+const USER_GENDER: string = 'femenino'; // del perfil del paciente — René reemplaza con dato real
 const STREAK = 7;
 const STREAK_DAYS = [true, true, true, true, true, false, false];
 const DIAS = ['L','M','X','J','V','S','D'];
