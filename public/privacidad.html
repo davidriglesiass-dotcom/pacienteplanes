@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad y Términos de Uso — ConectoSalud</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --azul:   #1B3A6B;
+  --azul2:  #2D5FA6;
+  --teal:   #0E8A7A;
+  --teal2:  #7DD3C8;
+  --gris:   #F8F9FB;
+  --borde:  #EEF0F4;
+  --texto:  #111827;
+  --texto2: #4B5563;
+  --texto3: #9CA3AF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--gris);
+  color: var(--texto);
+  line-height: 1.7;
+}
+
+/* ── HEADER ── */
+.header {
+  background: linear-gradient(135deg, var(--azul) 0%, var(--azul2) 100%);
+  padding: 48px 0 40px;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Lora', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.logo span { color: var(--teal2); }
+
+.header h1 {
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.header-meta {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+}
+
+/* ── NAV ── */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--borde);
+  z-index: 50;
+  padding: 0 24px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4px;
+  padding: 10px 0;
+}
+
+.nav-pill {
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--texto2);
+  text-decoration: none;
+  transition: all .15s;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.nav-pill:hover {
+  background: var(--gris);
+  border-color: var(--borde);
+  color: var(--azul);
+}
+
+.nav-pill.active {
+  background: var(--azul);
+  color: #fff;
+}
+
+/* ── CONTENT ── */
+.content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+/* ── SECTION ── */
+.section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 40px;
+  margin-bottom: 20px;
+  border: 1px solid var(--borde);
+  scroll-margin-top: 60px;
+}
+
+.section-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+.section h2 {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--gris);
+}
+
+.section h3 {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--azul);
+  margin: 24px 0 10px;
+}
+
+.section p {
+  font-size: 14px;
+  color: var(--texto2);
+  margin-bottom: 14px;
+  line-height: 1.75;
+}
+
+.section p:last-child { margin-bottom: 0; }
+
+.section ul, .section ol {
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+.section li {
+  font-size: 14px;
+  color: var(--texto2);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* ── HIGHLIGHT BOX ── */
+.highlight {
+  background: #EBF1FB;
+  border-left: 3px solid var(--azul);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  margin: 20px 0;
+  font-size: 13px;
+  color: var(--azul);
+  line-height: 1.6;
+}
+
+.highlight.teal {
+  background: #E0F5F2;
+  border-color: var(--teal);
+  color: #065F52;
+}
+
+.highlight.amber {
+  background: #FEF3C7;
+  border-color: #D97706;
+  color: #92400E;
+}
+
+/* ── TABLE ── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+}
+
+.data-table th {
+  background: var(--gris);
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--texto3);
+  border-bottom: 2px solid var(--borde);
+}
+
+.data-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--borde);
+  color: var(--texto2);
+  vertical-align: top;
+}
+
+.data-table tr:last-child td { border-bottom: none; }
+
+/* ── CONTACT CARD ── */
+.contact-card {
+  background: linear-gradient(135deg, var(--azul), var(--azul2));
+  border-radius: 14px;
+  padding: 28px 32px;
+  color: #fff;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-icon { font-size: 40px; flex-shrink: 0; }
+.contact-title { font-family: 'Lora', serif; font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+.contact-sub { font-size: 13px; opacity: .75; margin-bottom: 12px; }
+.contact-email { font-size: 14px; font-weight: 600; color: var(--teal2); }
+
+/* ── TOC ── */
+.toc {
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+
+.toc-title {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 14px;
+}
+
+.toc-list { list-style: none; padding: 0; columns: 2; gap: 8px; }
+.toc-list li { margin-bottom: 6px; break-inside: avoid; }
+.toc-list a {
+  font-size: 13px;
+  color: var(--azul2);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.toc-list a:hover { color: var(--teal); }
+.toc-num {
+  width: 20px; height: 20px;
+  background: var(--gris);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--azul);
+  flex-shrink: 0;
+}
+
+/* ── BADGE ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.badge-teal  { background: #E0F5F2; color: var(--teal); }
+.badge-azul  { background: #EBF1FB; color: var(--azul); }
+.badge-amber { background: #FEF3C7; color: #D97706; }
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--azul);
+  padding: 32px 24px;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.footer a { color: var(--teal2); text-decoration: none; }
+
+@media (max-width: 600px) {
+  .section { padding: 24px 20px; }
+  .header h1 { font-size: 24px; }
+  .toc-list { columns: 1; }
+  .contact-card { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">Conecto<span>Salud</span></div>
+  <h1>Política de Privacidad y Términos de Uso</h1>
+  <div class="header-meta">
+    Última actualización: abril 2026 · Vigente para pacientes y doctores en la plataforma ConectoSalud
+  </div>
+</div>
+
+<!-- STICKY NAV -->
+<div class="sticky-nav">
+  <div class="nav-inner">
+    <a class="nav-pill active" href="#intro">Introducción</a>
+    <a class="nav-pill" href="#datos">Datos que recopilamos</a>
+    <a class="nav-pill" href="#uso">Uso de datos</a>
+    <a class="nav-pill" href="#medicos">Datos médicos</a>
+    <a class="nav-pill" href="#compartir">Compartir datos</a>
+    <a class="nav-pill" href="#derechos">Tus derechos</a>
+    <a class="nav-pill" href="#ia">Inteligencia Artificial</a>
+    <a class="nav-pill" href="#terminos">Términos de uso</a>
+    <a class="nav-pill" href="#contacto">Contacto</a>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- Tabla de contenido -->
+  <div class="toc">
+    <div class="toc-title">📋 En esta página</div>
+    <ul class="toc-list">
+      <li><a href="#intro"><span class="toc-num">1</span> Introducción y quiénes somos</a></li>
+      <li><a href="#datos"><span class="toc-num">2</span> Datos que recopilamos</a></li>
+      <li><a href="#uso"><span class="toc-num">3</span> Cómo usamos tus datos</a></li>
+      <li><a href="#medicos"><span class="toc-num">4</span> Datos médicos y sensibles</a></li>
+      <li><a href="#compartir"><span class="toc-num">5</span> Compartir información</a></li>
+      <li><a href="#derechos"><span class="toc-num">6</span> Tus derechos</a></li>
+      <li><a href="#ia"><span class="toc-num">7</span> Inteligencia Artificial — Dani</a></li>
+      <li><a href="#terminos"><span class="toc-num">8</span> Términos de uso</a></li>
+      <li><a href="#contacto"><span class="toc-num">9</span> Contacto y DPO</a></li>
+    </ul>
+  </div>
+
+  <!-- 1. INTRODUCCIÓN -->
+  <div class="section" id="intro">
+    <div class="section-num">Sección 1</div>
+    <h2>Introducción y quiénes somos</h2>
+
+    <div class="highlight teal">
+      ConectoSalud es una plataforma digital de salud que conecta a médicos especialistas con sus pacientes entre consultas. Nos tomamos muy en serio la privacidad de tus datos, especialmente por tratarse de información médica sensible.
+    </div>
+
+    <p><strong>ConectoSalud</strong> es operada por <strong>Biemstar LLC</strong>. Nuestra plataforma incluye el portal para doctores (DocMonitor) y la aplicación para pacientes (NexoDoc).</p>
+
+    <p>Esta Política de Privacidad y Términos de Uso aplica a todos los usuarios de ConectoSalud — tanto médicos como pacientes — y cumple con la <strong>Ley 81 de 2019 de Protección de Datos Personales de la República de Panamá</strong> y su reglamentación vigente.</p>
+
+    <p>Al registrarte y usar ConectoSalud, aceptas los términos descritos en este documento. Si no estás de acuerdo con alguna parte, te pedimos que no uses la plataforma y nos contactes a <a href="/cdn-cgi/l/email-protection#2656544f5047454f424742664b4f4249454a4f484d0845494b" style="color:var(--teal)"><span class="__cf_email__" data-cfemail="5e2e2c37283f3d373a3f3a1e33373a313d32373035703d3133">[email&#160;protected]</span></a>.</p>
+
+    <h3>Responsable del tratamiento de datos</h3>
+    <table class="data-table">
+      <tr><th>Campo</th><th>Información</th></tr>
+      <tr><td>Empresa</td><td>Biemstar LLC</td></tr>
+      <tr><td>Plataforma</td><td>ConectoSalud</td></tr>
+      <tr><td>Email de privacidad</td><td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0474766d7265676d60656044696d606b67686d6a6f2a676b69">[email&#160;protected]</a></td></tr>
+      <tr><td>Email de soporte</td><td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f88b9788978a8c9db895919c979b94919693d69b9795">[email&#160;protected]</a></td></tr>
+      <tr><td>Ley aplicable</td><td>Ley 81 de 2019 — Protección de Datos Personales, Panamá</td></tr>
+    </table>
+  </div>
+
+  <!-- 2. DATOS -->
+  <div class="section" id="datos">
+    <div class="section-num">Sección 2</div>
+    <h2>Datos que recopilamos</h2>
+
+    <h3>Datos que tú nos proporcionas</h3>
+    <ul>
+      <li><strong>Datos de registro:</strong> nombre, apellido, correo electrónico, contraseña (encriptada), número de teléfono.</li>
+      <li><strong>Datos de perfil:</strong> fecha de nacimiento, género, ciudad, tipo de sangre.</li>
+      <li><strong>Datos médicos:</strong> condiciones crónicas, alergias, medicamentos actuales, cirugías previas, hábitos de vida (tabaco, alcohol, ejercicio, sueño).</li>
+      <li><strong>Datos del diario de salud:</strong> estado de ánimo, nivel de dolor, calidad del sueño, síntomas reportados, hora de acostarse y levantarse.</li>
+      <li><strong>Exámenes de laboratorio:</strong> archivos PDF e imágenes que subes voluntariamente.</li>
+      <li><strong>Mensajes con Dani IA:</strong> el contenido de tus conversaciones con nuestra guía de inteligencia artificial.</li>
+    </ul>
+
+    <h3>Datos que recopilamos automáticamente</h3>
+    <ul>
+      <li>Fecha y hora de acceso a la plataforma.</li>
+      <li>Tipo de dispositivo y navegador.</li>
+      <li>Páginas visitadas dentro de la app.</li>
+      <li>Acciones realizadas (indicaciones marcadas, diarios guardados, exámenes subidos).</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Importante:</strong> Nunca recopilamos datos de pago directamente. Las transacciones son procesadas por Stripe, que tiene su propia política de privacidad. ConectoSalud no almacena números de tarjeta ni datos bancarios.
+    </div>
+  </div>
+
+  <!-- 3. USO -->
+  <div class="section" id="uso">
+    <div class="section-num">Sección 3</div>
+    <h2>Cómo usamos tus datos</h2>
+
+    <p>Usamos tus datos únicamente para los fines descritos a continuación. Nunca vendemos tu información a terceros ni la usamos para publicidad de terceros.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Finalidad</th><th>Base legal</th><th>Datos usados</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prestación del servicio de salud digital</td>
+          <td><span class="badge badge-teal">Ejecución del contrato</span></td>
+          <td>Todos los datos del perfil y médicos</td>
+        </tr>
+        <tr>
+          <td>Mostrar tu tratamiento activo y adherencia</td>
+          <td><span class="badge badge-teal">Ejecución del contrato</span></td>
+          <td>Indicaciones, cumplimiento, diario</td>
+        </tr>
+        <tr>
+          <td>Personalizar las respuestas de Dani IA</td>
+          <td><span class="badge badge-teal">Ejecución del contrato</span></td>
+          <td>Perfil médico, condiciones, medicamentos</td>
+        </tr>
+        <tr>
+          <td>Enviar notificaciones de citas y recordatorios</td>
+          <td><span class="badge badge-teal">Ejecución del contrato</span></td>
+          <td>Email, teléfono, datos de cita</td>
+        </tr>
+        <tr>
+          <td>Generar el resumen mensual de salud</td>
+          <td><span class="badge badge-teal">Ejecución del contrato</span></td>
+          <td>Diario de salud, adherencia, síntomas</td>
+        </tr>
+        <tr>
+          <td>Seguridad de la plataforma y prevención de fraude</td>
+          <td><span class="badge badge-azul">Interés legítimo</span></td>
+          <td>Datos de acceso, IP, dispositivo</td>
+        </tr>
+        <tr>
+          <td>Mejora del producto (datos anonimizados)</td>
+          <td><span class="badge badge-azul">Interés legítimo</span></td>
+          <td>Solo datos agregados y anónimos</td>
+        </tr>
+        <tr>
+          <td>Cumplimiento de obligaciones legales</td>
+          <td><span class="badge badge-amber">Obligación legal</span></td>
+          <td>Los que la ley exija</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Lo que NUNCA haremos con tus datos</h3>
+    <ul>
+      <li>Vender tu información a aseguradoras, farmacéuticas o cualquier tercero.</li>
+      <li>Usar tu historial médico para mostrarte publicidad de terceros.</li>
+      <li>Compartir tus datos con empleadores o instituciones sin tu consentimiento explícito.</li>
+      <li>Usar tus datos para discriminarte o perjudicarte de ninguna forma.</li>
+    </ul>
+  </div>
+
+  <!-- 4. DATOS MÉDICOS -->
+  <div class="section" id="medicos">
+    <div class="section-num">Sección 4</div>
+    <h2>Datos médicos y sensibles</h2>
+
+    <div class="highlight amber">
+      <strong>⚠️ Categoría especial de datos:</strong> Los datos de salud son considerados datos sensibles bajo la Ley 81 de Panamá y reciben protección reforzada. Su tratamiento requiere tu consentimiento explícito.
+    </div>
+
+    <p>Al registrarte en ConectoSalud y completar tu perfil médico, otorgas tu <strong>consentimiento explícito e informado</strong> para que procesemos tus datos de salud con las siguientes finalidades:</p>
+
+    <ul>
+      <li>Mostrar tu historial clínico y tratamiento activo a los médicos con quienes estás conectado en la plataforma.</li>
+      <li>Personalizar las respuestas de Dani IA con tu contexto médico.</li>
+      <li>Generar reportes de adherencia y bienestar que tú y tu doctor pueden revisar.</li>
+      <li>Alertar a tu doctor cuando registras síntomas de alarma (dolor mayor a 7/10, entre otros).</li>
+    </ul>
+
+    <h3>Seguridad de tus datos médicos</h3>
+    <ul>
+      <li>Toda la comunicación entre tu dispositivo y nuestros servidores usa cifrado <strong>HTTPS/TLS</strong>.</li>
+      <li>Las contraseñas se almacenan encriptadas con <strong>bcrypt</strong> — nunca en texto plano.</li>
+      <li>Los datos se almacenan en servidores con backups automáticos diarios.</li>
+      <li>El acceso a los datos está restringido por roles — un doctor solo ve a sus propios pacientes.</li>
+      <li>Los archivos de exámenes se almacenan con acceso controlado y no son públicos.</li>
+    </ul>
+
+    <h3>¿Quién puede ver tus datos médicos?</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Dato</th><th>Tú</th><th>Tu doctor</th><th>Otros doctores</th><th>ConectoSalud</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Perfil personal</td><td>✅</td><td>✅</td><td>❌</td><td>Solo para soporte</td></tr>
+        <tr><td>Indicaciones de tratamiento</td><td>✅</td><td>Solo las suyas</td><td>❌</td><td>Solo para soporte</td></tr>
+        <tr><td>Diario de salud</td><td>✅</td><td>✅</td><td>❌</td><td>Solo para soporte</td></tr>
+        <tr><td>Exámenes de laboratorio</td><td>✅</td><td>✅ (si los compartiste)</td><td>❌</td><td>Solo para soporte</td></tr>
+        <tr><td>Conversaciones con Dani</td><td>✅</td><td>❌</td><td>❌</td><td>Solo para mejorar el servicio</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 5. COMPARTIR -->
+  <div class="section" id="compartir">
+    <div class="section-num">Sección 5</div>
+    <h2>Compartir información con terceros</h2>
+
+    <p>ConectoSalud no vende ni alquila tus datos personales. Solo compartimos información en los siguientes casos:</p>
+
+    <h3>Proveedores de servicio</h3>
+    <p>Trabajamos con proveedores técnicos que procesan datos en nuestro nombre bajo acuerdos de confidencialidad:</p>
+    <ul>
+      <li><strong>Vercel</strong> — hosting y despliegue de la plataforma (Estados Unidos, cumple con estándares internacionales).</li>
+      <li><strong>Anthropic</strong> — procesamiento de mensajes con Dani IA. Los mensajes se envían para generar respuestas y no se usan para entrenar modelos sin consentimiento.</li>
+      <li><strong>Stripe</strong> — procesamiento de pagos (cuando aplique). No recibe datos médicos.</li>
+      <li><strong>Hostinger</strong> — alojamiento de la base de datos (servidores con certificaciones de seguridad).</li>
+    </ul>
+
+    <h3>Por obligación legal</h3>
+    <p>Podemos divulgar información si una autoridad competente de la República de Panamá lo requiere mediante orden judicial o requerimiento legal válido. En ese caso, te notificaremos en la medida en que la ley lo permita.</p>
+
+    <h3>Con tu consentimiento explícito</h3>
+    <p>En cualquier otro caso, solo compartiremos tus datos si tú lo solicitas expresamente — por ejemplo, si decides exportar y compartir tu historial con un médico externo a la plataforma.</p>
+  </div>
+
+  <!-- 6. DERECHOS -->
+  <div class="section" id="derechos">
+    <div class="section-num">Sección 6</div>
+    <h2>Tus derechos sobre tus datos</h2>
+
+    <p>De acuerdo con la <strong>Ley 81 de 2019</strong> de la República de Panamá, tienes los siguientes derechos sobre tus datos personales:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Derecho</th><th>Qué significa</th><th>Cómo ejercerlo</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Acceso</strong></td>
+          <td>Conocer qué datos tenemos sobre ti</td>
+          <td>Escríbenos a <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95e5e7fce3f4f6fcf1f4f1d5f8fcf1faf6f9fcfbfebbf6faf8">[email&#160;protected]</a></td>
+        </tr>
+        <tr>
+          <td><strong>Rectificación</strong></td>
+          <td>Corregir datos incorrectos o incompletos</td>
+          <td>Desde tu perfil en la app o por email</td>
+        </tr>
+        <tr>
+          <td><strong>Cancelación / Supresión</strong></td>
+          <td>Solicitar que eliminemos tus datos</td>
+          <td>Escríbenos a <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9bebe9f2edfaf8f2fffaffdbf6f2fff4f8f7f2f5f0b5f8f4f6">[email&#160;protected]</a></td>
+        </tr>
+        <tr>
+          <td><strong>Oposición</strong></td>
+          <td>Oponerte a ciertos usos de tus datos</td>
+          <td>Escríbenos a <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1d6d6f746b7c7e74797c795d707479727e71747376337e7270">[email&#160;protected]</a></td>
+        </tr>
+        <tr>
+          <td><strong>Portabilidad</strong></td>
+          <td>Recibir tus datos en formato descargable</td>
+          <td>Plan Family — exportar PDF, o por email</td>
+        </tr>
+        <tr>
+          <td><strong>Revocación del consentimiento</strong></td>
+          <td>Retirar el consentimiento en cualquier momento</td>
+          <td>Esto implica cerrar tu cuenta</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      Responderemos a todas las solicitudes de derechos en un plazo máximo de <strong>15 días hábiles</strong>, conforme a lo establecido en la Ley 81 de 2019.
+    </div>
+
+    <h3>Retención de datos</h3>
+    <p>Conservamos tus datos mientras tu cuenta esté activa. Si solicitas la eliminación de tu cuenta, borraremos todos tus datos personales en un plazo de 30 días, excepto aquellos que debamos conservar por obligación legal.</p>
+    <p>Los datos anonimizados (sin posibilidad de identificarte) pueden conservarse para análisis estadísticos internos.</p>
+  </div>
+
+  <!-- 7. IA -->
+  <div class="section" id="ia">
+    <div class="section-num">Sección 7</div>
+    <h2>Inteligencia Artificial — Dani y Especialistas</h2>
+
+    <div class="highlight teal">
+      <strong>Dani no es un médico.</strong> ConectoSalud usa inteligencia artificial para brindarte apoyo informativo, pero nunca reemplaza el diagnóstico, tratamiento o consejo de un profesional de la salud.
+    </div>
+
+    <h3>¿Cómo funciona Dani?</h3>
+    <p>Dani y los especialistas IA (Marco, Luna, Rio, Farma, Nox) son asistentes de inteligencia artificial desarrollados sobre el modelo Claude de Anthropic. Sus respuestas se generan en tiempo real basándose en:</p>
+    <ul>
+      <li>El texto que tú escribes en la conversación.</li>
+      <li>Tu perfil médico (condiciones, medicamentos, tratamiento activo) que compartiste al registrarte.</li>
+      <li>Los objetivos que definiste en tu perfil "Para Dani".</li>
+    </ul>
+
+    <h3>Limitaciones importantes</h3>
+    <ul>
+      <li>Dani <strong>no puede diagnosticar enfermedades</strong> ni prescribir medicamentos.</li>
+      <li>Dani <strong>no reemplaza</strong> la consulta con tu médico tratante.</li>
+      <li>En situaciones de emergencia médica, llama al <strong>911</strong> o acude a urgencias.</li>
+      <li>En crisis de salud mental, llama a la <strong>Línea de Crisis de Panamá: 171</strong>.</li>
+      <li>Las respuestas de Dani pueden contener errores — siempre contrasta con tu médico.</li>
+    </ul>
+
+    <h3>Privacidad en las conversaciones con Dani</h3>
+    <p>Las conversaciones con Dani son procesadas por Anthropic (proveedor de la IA) para generar respuestas. Anthropic tiene sus propias políticas de privacidad. ConectoSalud no usa el contenido de tus conversaciones para entrenar modelos de IA.</p>
+    <p>Las conversaciones pueden guardarse en nuestra base de datos para mostrarte el historial. Puedes solicitar su eliminación en cualquier momento.</p>
+  </div>
+
+  <!-- 8. TÉRMINOS -->
+  <div class="section" id="terminos">
+    <div class="section-num">Sección 8</div>
+    <h2>Términos de Uso</h2>
+
+    <h3>Elegibilidad</h3>
+    <p>Para usar ConectoSalud debes tener al menos 18 años o contar con el consentimiento de un tutor legal. Al registrarte, declaras que la información que proporcionas es veraz y actualizada.</p>
+
+    <h3>Cuenta y responsabilidad</h3>
+    <ul>
+      <li>Eres responsable de mantener la confidencialidad de tu contraseña.</li>
+      <li>Notifícanos de inmediato si sospechas acceso no autorizado a tu cuenta.</li>
+      <li>Está prohibido compartir tu cuenta con otras personas.</li>
+      <li>No está permitido usar la plataforma para fines ilegales o fraudulentos.</li>
+    </ul>
+
+    <h3>Uso aceptable</h3>
+    <ul>
+      <li>La plataforma es para uso personal de salud — no para reventa ni uso comercial no autorizado.</li>
+      <li>Está prohibido intentar acceder a datos de otros usuarios.</li>
+      <li>No está permitido hacer ingeniería inversa ni copiar el código de la plataforma.</li>
+      <li>El contenido que subes (exámenes, notas) debe ser tuyo o debes tener autorización para compartirlo.</li>
+    </ul>
+
+    <h3>Planes y pagos</h3>
+    <ul>
+      <li>El plan Free está disponible sin costo y sin límite de tiempo.</li>
+      <li>Los planes Plus ($4.99/mes) y Family ($9.99/mes) se cobran mensualmente.</li>
+      <li>Los planes de doctores ($100/mes o $1,000/año) incluyen un período de prueba de 30 días.</li>
+      <li>Puedes cancelar tu suscripción en cualquier momento desde la configuración de tu cuenta.</li>
+      <li>No hay reembolsos por períodos parciales ya cobrados, salvo fallo técnico atribuible a ConectoSalud.</li>
+    </ul>
+
+    <h3>Disponibilidad del servicio</h3>
+    <p>Nos esforzamos por mantener la plataforma disponible 24/7. Sin embargo, no garantizamos disponibilidad ininterrumpida. Podemos realizar mantenimientos programados notificando con anticipación a través de la app o por email.</p>
+
+    <h3>Limitación de responsabilidad</h3>
+    <p>ConectoSalud es una plataforma de apoyo a la salud — no una entidad de salud regulada. No somos responsables de las decisiones médicas tomadas basándose en la información de la plataforma. La responsabilidad médica recae exclusivamente en los profesionales de salud habilitados.</p>
+
+    <h3>Modificaciones a estos términos</h3>
+    <p>Podemos actualizar esta política en cualquier momento. Cuando hagamos cambios materiales, te notificaremos por email y dentro de la app con al menos 15 días de anticipación. El uso continuado de la plataforma después de esa fecha implica la aceptación de los nuevos términos.</p>
+
+    <h3>Ley aplicable y jurisdicción</h3>
+    <p>Este acuerdo se rige por las leyes aplicables a la operación del servicio. Para usuarios en Panamá, aplica la Ley 81 de 2019 de Protección de Datos Personales. La jurisdicción específica será determinada según el domicilio del usuario y la naturaleza de la disputa.</p>
+  </div>
+
+  <!-- 9. CONTACTO -->
+  <div class="section" id="contacto">
+    <div class="section-num">Sección 9</div>
+    <h2>Contacto y Delegado de Protección de Datos</h2>
+
+    <p>Para cualquier consulta sobre privacidad, ejercicio de derechos, o reporte de incidentes de seguridad, contáctanos a través de los siguientes canales:</p>
+
+    <div class="contact-card">
+      <div class="contact-icon">📧</div>
+      <div>
+        <div class="contact-title">Equipo de Privacidad — ConectoSalud</div>
+        <div class="contact-sub">Respondemos en un máximo de 15 días hábiles según Ley 81 de Panamá</div>
+        <div class="contact-email">contacto@biemstar.com</div>
+      </div>
+    </div>
+
+    <div style="margin-top:16px">
+      <table class="data-table">
+        <tr><th>Tipo de consulta</th><th>Email</th></tr>
+        <tr><td>Privacidad y protección de datos</td><td>contacto@biemstar.com</td></tr>
+        <tr><td>Soporte técnico general</td><td>contacto@biemstar.com</td></tr>
+        <tr><td>Facturación y pagos</td><td>contacto@biemstar.com</td></tr>
+        <tr><td>Reporte de incidentes de seguridad</td><td>contacto@biemstar.com</td></tr>
+      </table>
+    </div>
+
+    <div class="highlight" style="margin-top:20px">
+      <strong>Autoridad de control:</strong> Si consideras que tus derechos han sido vulnerados, puedes presentar una reclamación an
