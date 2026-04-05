@@ -317,6 +317,9 @@ body {
 
 <!-- HEADER -->
 <div class="header">
+  <div style="max-width:860px;margin:0 auto 16px;padding:0 24px;text-align:left">
+    <a href="javascript:history.back()" style="color:rgba(255,255,255,0.7);font-size:13px;text-decoration:none;font-family:'DM Sans',sans-serif;">← Volver</a>
+  </div>
   <div class="logo">Conecto<span>Salud</span></div>
   <h1>Política de Privacidad y Términos de Uso</h1>
   <div class="header-meta">
@@ -699,4 +702,46 @@ body {
     </div>
 
     <div class="highlight" style="margin-top:20px">
-      <strong>Autoridad de control:</strong> Si consideras que tus derechos han sido vulnerados, puedes presentar una reclamación an
+      <strong>Autoridad de control:</strong> Si consideras que tus derechos han sido vulnerados, puedes presentar una reclamación ante la <strong>Autoridad Nacional de Transparencia y Acceso a la Información (ANTAI)</strong> de la República de Panamá, que actúa como autoridad de control para la Ley 81 de 2019.
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div style="font-family:'Lora',serif;font-size:18px;color:#fff;margin-bottom:8px">
+    Conecto<span style="color:#7DD3C8">Salud</span>
+  </div>
+  © 2026 ConectoSalud · Biemstar LLC<br>
+  Política vigente desde abril 2026 · Cumple con la Ley 81 de 2019<br><br>
+  <a href="mailto:privacidad@conectosalud.com">privacidad@conectosalud.com</a> ·
+  <a href="mailto:soporte@conectosalud.com">soporte@conectosalud.com</a>
+</div>
+
+<script>
+const sections = document.querySelectorAll('.section');
+const pills = document.querySelectorAll('.nav-pill');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  const scrollPos = window.scrollY + 120;
+  sections.forEach(sec => {
+    if (scrollPos >= sec.offsetTop) current = sec.id;
+  });
+  if (!current && sections.length) current = sections[0].id;
+  pills.forEach(pill => {
+    pill.classList.toggle('active', pill.getAttribute('href') === '#' + current);
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.getElementById(a.getAttribute('href').slice(1));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+</body>
+</html>
